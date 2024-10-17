@@ -79,7 +79,7 @@ def load_hf_model(model_size):
   elif model_size == "mixtral-8x7b":
     model = AutoModelForCausalLM.from_pretrained("mistralai/Mixtral-8x7B-v0.1", device_map="auto")
   elif model_size=="llama3.1-8b":
-    model=AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3.1-8B-Instruct", token='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')
+    model=AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3.1-8B-Instruct", token='this is a hf acess token')# This is the invalid token for demonstration purposes. Please request for your own acess to llama models and comply with the meta's requirements.  
   else:
     raise NotImplementedError
   return model
